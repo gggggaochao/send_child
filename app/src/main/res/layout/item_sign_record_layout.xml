@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/bg_date_time"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_student_name"
+            fontPath="fonts/Cartoon.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_union_id"
+            fontPath="fonts/Cartoon.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_date_time"
+            fontPath="fonts/Cartoon.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_take_photo"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_sign_in"
+            android:layout_width="65dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/ic_sign_in_pressed"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_sign_out"
+            android:layout_width="65dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/ic_sign_out_pressed"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

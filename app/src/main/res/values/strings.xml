@@ -1,0 +1,301 @@
+<resources>
+    <string name="error_connection">请检查网络</string>
+    <string name="error_server">服务器出错</string>
+    <string name="error_timeout">连接超时</string>
+    <string name="error_ssl">证书错误</string>
+    <string name="error_json">数据解析错误</string>
+    <string name="error_unknown_server">服务器未知错误，请重试</string>
+
+    <string name="app_name">接送系统</string>
+    <!--权限相关 start-->
+    <string name="please_open_write_external_storage">请打开文件存储权限</string>
+    <string name="please_turn_on_the_permission_of_camera">请打开拍照和存储权限</string>
+    <string name="please_turn_on_the_permission_of_external_storage">请打开存储权限</string>
+    <string name="please_turn_on_the_permission_of_record">请打开录音权限</string>
+    <string name="please_turn_on_the_permission_of_call">请打开拨打电话权限</string>
+    <string name="please_turn_on_the_permission_of_location">请打开位置权限</string>
+    <string name="please_turn_on_the_permission_of_read_write_contact">请打开读取联系人，修改联系人权限</string>
+    <!--权限相关 end-->
+
+    <string name="request_date_formatter">"yyyy-MM-dd"</string>
+
+    <string name="notice_dialog_default_title">通知公告</string>
+    <string name="notice_dialog_default_value">没有内容</string>
+    <string name="load_success_qr_code">请扫码就餐</string>
+    <string name="load_fail_qr_code">二维码加载失败</string>
+    <string name="notice_dialog_button">知道了</string>
+    <string name="unknown_status">未知</string>
+
+    <string name="dialog_title_confirm_user">请确认是否本人</string>
+    <string name="dialog_button_yes">是</string>
+    <string name="dialog_button_no">不是</string>
+
+    <string name="success_recognized">识别成功</string>
+
+    <string name="success_sign_in">入园！</string>
+    <string name="success_sign_out">出园！</string>
+    <string name="fail_card_invalid">此卡无效，请联系管理人员</string>
+    <string name="fail_card_except">卡片异常，请联系管理人员</string>
+    <string name="fail_sign_in_time">请勿重复操作</string>
+    <string name="fail_sign_in">服务器错误，请联系管理人员</string>
+    <string name="fail_user_invalid">此用户无效</string>
+
+    <string name="fail_network_error">网络异常</string>
+    <string name="fail_swipe_too_fast">请勿频繁操作</string>
+    <string name="processing_offline_data">正在处理离线数据，请稍后重试</string>
+    <string name="reloading_data">正在重新加载数据，请稍后重试</string>
+    <string name="data_exception">数据异常</string>
+
+    <string name="success_but_no_features">没有特征值数据</string>
+    <string name="success_but_no_device_info">未配置设备信息</string>
+    <!--aiwinn start-->
+    <string name="debug_tip">功能开发中</string>
+    <string name="reopen">重启生效</string>
+    <string name="rect">人脸大小 : </string>
+    <string name="blur">模糊度 : </string>
+    <string name="light">亮度 : </string>
+    <string name="score">匹配度 : </string>
+
+    <string name="weixin_scan">微信扫一扫</string>
+    <string name="sure">是</string>
+    <string name="no">否</string>
+    <string name="finish">结束 ?</string>
+    <string name="no_face">未发现有效人脸</string>
+    <string name="detect_face">检测失败</string>
+    <string name="load_camera">相机加载中</string>
+    <string name="being_init_face_sdk">正在初始化人脸数据</string>
+    <string name="load">加载中</string>
+    <string name="load_done">加载完成</string>
+    <string name="check">检查</string>
+    <string name="press_exit">再按一次退出程序</string>
+    <string name="init_fail">初始化失败</string>
+    <string name="init_close">没有开启注册功能</string>
+
+    <string name="authorization">授权</string>
+    <string name="authorization_not">不需要授权</string>
+    <string name="authorization_fail">授权失败</string>
+    <string name="authorization_success">授权成功</string>
+    <string name="authorization_had">已经授权</string>
+
+    <string name="bmp_register">图片注册</string>
+    <string name="choose">选择图片</string>
+    <string name="start_register">开始注册</string>
+    <string name="register">注册</string>
+    <string name="registered">已注册</string>
+    <string name="unregistered">未注册</string>
+    <string name="success_register">注册成功</string>
+    <string name="success_part_register">部分注册成功</string>
+    <string name="register_fail">注册失败</string>
+    <string name="name_empty">名字为空</string>
+    <string name="error_name_have_registered">该名字已注册！</string>
+    <string name="error_face_have_registered">该人脸已注册！</string>
+    <string name="error_face_too_blur">所拍人脸过于模糊！</string>
+    <string name="error_face_too_small">所拍人脸过小！</string>
+
+    <string name="upload">上传</string>
+
+    <string name="success_sync_features">成功同步%1$d条人脸数据</string>
+    <string name="success_sync_students">成功同步%1$d个学生</string>
+    <string name="fail_sync_features">同步失败</string>
+
+    <string name="fail_download_img">下载图片失败</string>
+
+    <string name="remind_processing">正在处理</string>
+
+    <string name="yuv_register">相机注册</string>
+    <string name="reopen_activity">请重新打开</string>
+    <string name="not_center">人脸不居中</string>
+    <string name="rise">抬头</string>
+    <string name="down">低头</string>
+    <string name="keep_left">靠左</string>
+    <string name="keep_right">靠右</string>
+    <string name="enter_register">输入注册信息</string>
+    <string name="name">名称</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="done">完成</string>
+
+    <string name="detect">检测</string>
+    <string name="slot_card">刷卡</string>
+    <string name="reset">重置</string>
+    <string name="random_register">随机注册</string>
+    <string name="match_success">匹配成功</string>
+    <string name="match_fail">匹配失败</string>
+    <string name="parse_begin">解析开始</string>
+    <string name="parse_success">解析成功</string>
+    <string name="parse_fail">解析失败</string>
+
+    <string name="list">注册列表</string>
+    <string name="delete">删除</string>
+    <string name="deleting">删除中</string>
+    <string name="delete_all">删除所有</string>
+    <string name="select_all">选中所有</string>
+    <string name="select_current_page">选中此页</string>
+    <string name="select">已选 : </string>
+    <string name="select_more">选中更多</string>
+    <string name="update_success">更新成功</string>
+    <string name="update_fail">更新失败</string>
+    <string name="success_delete">删除成功</string>
+    <string name="fail_delete">删除失败</string>
+
+    <string name="bulk_register">批量注册</string>
+    <string name="file_path">文件地址</string>
+    <string name="file_size">文件个数</string>
+    <string name="dir_empty">文件夹为空</string>
+    <string name="register_all">注册所有</string>
+
+    <string name="config">配置</string>
+    <string name="set">设置</string>
+    <string name="set_success">设置成功</string>
+    <string name="set_fail">设置失败</string>
+    <string name="auto">自动</string>
+    <string name="preview_size">预览分辨率</string>
+    <string name="tracker_mode">追踪模式</string>
+    <string name="detect_mode">检测模式</string>
+    <string name="live_mode">活体模式</string>
+    <string name="live_mode_normal">正常</string>
+    <string name="live_mode_auto">自动</string>
+    <string name="recognition_mode_track1">追踪1</string>
+    <string name="recognition_mode_track2">追踪2</string>
+    <string name="recognition_mode_detect">仅检测</string>
+    <string name="recognition_mode_recognition">仅识别</string>
+    <string name="register_db">注册库</string>
+    <string name="detect_db">检测库</string>
+    <string name="db_default">默认库</string>
+    <string name="db_ex">扩展库</string>
+    <string name="enhance">增强模式</string>
+    <string name="cov">遮挡模式</string>
+    <string name="debug">调试</string>
+    <string name="use_new">新版本活体</string>
+    <string name="use_fix">混合版本活体</string>
+    <string name="savecov">遮挡调试</string>
+    <string name="savefake">保存拒真图</string>
+    <string name="savelive">保存攻破图</string>
+    <string name="savetan">保存Tan图</string>
+    <string name="saveerror">保存异常图</string>
+    <string name="saveblur">保存模糊图</string>
+    <string name="savenoface">保存无人脸图</string>
+    <string name="savess">保存相似度小图</string>
+    <string name="savet">保存追踪人脸</string>
+    <string name="lr">人脸框左右镜像</string>
+    <string name="tb">人脸框上下镜像</string>
+    <string name="camera_id">相机ID</string>
+    <string name="camera_degree">相机数据角度</string>
+    <string name="preview_degree">相机预览角度</string>
+    <string name="fail_open_unsupported_camera_id">本机不支持CameraId：</string>
+    <string name="fail_set_unsupported_resolution">本机不支持分辨率：</string>
+    <string name="fail_get_supported_resolution">无法获取相机支持的分辨率</string>
+    <string name="tracker_count">追踪次数</string>
+    <string name="tracker_w">追踪 - W</string>
+    <string name="tracker_h">追踪 - H</string>
+    <string name="detect_face_rect">追踪筛选人脸最小值</string>
+    <string name="detect_rate">检测比例</string>
+    <string name="tracker_size">追踪最小边长</string>
+    <string name="feature_size">提取特征值边长</string>
+    <string name="detect_size">检测最小边长</string>
+    <string name="value_face_minima">注册人脸最小宽</string>
+    <string name="value_unlock">阈值</string>
+    <string name="value_liveness">活体值</string>
+    <string name="value_liveness2">活体值2</string>
+    <string name="value_liveness3">活体值3</string>
+    <string name="value_fake_count">非活判定帧数</string>
+    <string name="value_live_count">活体判定帧数</string>
+    <string name="value_detect_light_max">最大亮度(检测)</string>
+    <string name="value_detect_light_min">最小亮度(检测)</string>
+    <string name="value_detect_blur">模糊度(检测)</string>
+    <string name="value_detect_blur_new">新模糊度(检测)</string>
+    <string name="value_register_light_max">最大亮度(注册)</string>
+    <string name="value_register_light_min">最小亮度(注册)</string>
+    <string name="value_register_blur">模糊度(注册)</string>
+    <string name="switch_liveness">检测时是否包含活体</string>
+    <string name="switch_recognition">检测时是否包含识别</string>
+
+    <string name="infrared_mode">红外模型</string>
+    <string name="infrared_value">红外识别值</string>
+    <string name="save_in_frared">保存红外图C</string>
+    <string name="save_in_fraredlive">保存红外活体图J</string>
+    <string name="save_in_fraredfake">保存红外非活图J</string>
+    <string name="infrared_switch">检测时是否开启红外识别</string>
+    <!--aiwinn end-->
+
+    <!--天气popwindow相关-->
+    <string name="pop_weather_today">今天</string>
+    <string name="pop_weather_tomorrow">明天</string>
+    <string name="pop_weather_third_day">后天</string>
+    <string name="min_oc">°C/</string>
+    <string name="max_oc">°C</string>
+    <string name="air">空气</string>
+    <string name="eg">\u3000|\u3000</string>
+
+    <!--日历popwindow相关-->
+    <string name="pop_change_time">切换周月</string>
+    <string name="pop_change_style">更改效果</string>
+    <string name="pop_last_month">上一月</string>
+    <string name="pop_next_month">下一月</string>
+    <string name="pop_year">年</string>
+    <string name="pop_month">月</string>
+    <string name="rest">休</string>
+    <string-array name="english_week_string_array">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    <string-array name="chinese_week_string_array">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+
+    <!--日期-->
+    <string-array name="week_array">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期天</item>
+    </string-array>
+    <string name="week">星期</string>
+    <string name="week_food_list">本周菜谱</string>
+    <string name="no_data">暂无内容</string>
+    <string name="parent">家长：%1$s</string>
+    <string name="student">学生：%1$s</string>
+    <string name="class_name">班級：%1$s</string>
+    <string name="sign_in">入园</string>
+    <string name="sign_out">出园</string>
+    <string name="select_student">请选择接送的小朋友</string>
+    <string name="student_confirm_tip">是否确认%1$s小朋友%2$s？</string>
+
+    <string name="password_error">密码错误</string>
+
+
+    <!-- 刷新列表 -->
+    <string name="smart_empty_tip">没有内容哦～</string>
+    <string name="smart_net_failure_tip">网络不给力</string>
+    <string name="smart_no_net_failure_tip">当前无法连接网络，请更改网络试试</string>
+    <string name="smart_failure_tip">服务器请求失败</string>
+    <string name="smart_click_try">点击重试</string>
+
+
+    <string name="sign_record">考勤统计</string>
+    <string name="input_name_union_id">请输入学生姓名或学号</string>
+    <string name="search">搜 索</string>
+    <string name="no_more_data">没有更多数据了</string>
+    <string name="input_start_time">请选择开始日期</string>
+    <string name="input_end_time">请选择结束日期</string>
+    <string name="student_name">姓名：%1$s</string>
+    <string name="student_union_id">学号：%1$s</string>
+    <string name="student_time">时间：%1$s</string>
+
+    <string name="sync_tip">是否同步数据?</string>
+
+</resources>

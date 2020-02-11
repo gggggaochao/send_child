@@ -1,0 +1,128 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    def refix = rootProject.ext.app.refix
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        multiDexEnabled rootProject.ext.app.multiDexEnabled
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "versionCode"
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs', '../CompBaiDuTts/libs'
+        }
+    }
+
+    signingConfigs {
+        myConfig {
+            storeFile file(rootProject.ext.sign.storeFile)
+            storePassword rootProject.ext.sign.storePassword
+            keyAlias rootProject.ext.sign.keyAlias
+            keyPassword rootProject.ext.sign.keyPassword
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.myConfig
+            minifyEnabled rootProject.ext.app.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.myConfig
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.android.sourceCompatibilityVersion
+        targetCompatibility rootProject.ext.android.targetCompatibilityVersion
+    }
+
+    flavorDimensions "color"
+
+    //渠道
+    productFlavors {
+        d {
+            dimension "color"
+            buildConfigField("String", "API_HOST", "\"https://testapi.happyn2.com/\"")
+            buildConfigField("String", "SOCKET_HOST", "\"wss://testapi.happyn2.com:11443/\"")
+            buildConfigField("String", "MASTER_KEY", "\"abcdefghijkopqrstuvwxyz123456\"")
+        }
+        p {
+            buildConfigField("String", "API_HOST", "\"https://mcpapi.iyuyun.net:18443/\"")
+            buildConfigField("String", "SOCKET_HOST", "\"wss://mcpapi.iyuyun.net:14443/\"")
+            buildConfigField("String", "MASTER_KEY", "\"tUnmjGTZglI49CQWmsqhJQmSs83V2Y1e\"")
+            dimension "color"
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                // apk_渠道名-版本号-版本名称-编译时间.apk
+                def fileName = "${refix}_v${versionName}_${variant.productFlavors.name}_${releaseTime()}_${variant.buildType.name}.apk"
+                outputFileName = fileName
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            // 设置所要编写的c源码位置，以及编译后so文件的名字
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation rootProject.ext.dependencies.junit
+    implementation rootProject.ext.dependencies.appcompatV7
+    implementation rootProject.ext.dependencies.baserecyclerview
+    implementation rootProject.ext.dependencies.constraint
+    implementation rootProject.ext.dependencies.devconfig
+    implementation rootProject.ext.dependencies.camerakit
+    implementation rootProject.ext.dependencies.kotlin_stdlib
+    implementation rootProject.ext.dependencies.util_library
+    implementation rootProject.ext.dependencies.zxing
+    implementation rootProject.ext.dependencies.amap
+    implementation rootProject.ext.dependencies.customcalendarview
+    implementation rootProject.ext.dependencies.WebSocket
+    implementation rootProject.ext.dependencies.calligraphy
+    implementation rootProject.ext.dependencies.autoScrollViewPager
+    implementation rootProject.ext.dependencies.smartRefreshLayout
+    implementation rootProject.ext.dependencies.smartRefreshHeader
+    implementation rootProject.ext.dependencies.titlebar
+    implementation rootProject.ext.dependencies.pickerView
+    implementation rootProject.ext.dependencies.filedownloader
+    implementation project(':base')
+    implementation project(':sdk')
+    implementation project(':CompBaiDuTts')
+}
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("GMT+8"))
+}

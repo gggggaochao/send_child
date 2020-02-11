@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/ll_dialog_parent_student"
+        android:layout_width="wrap_content"
+        android:layout_height="560dp"
+        android:background="@mipmap/bg_parent_student2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_parent_avatar"
+                android:layout_width="142dp"
+                android:layout_height="142dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/bg_avatar" />
+
+                <ImageView
+                    android:id="@+id/iv_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_parent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#7C7C7C"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/student_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_student_avatar"
+                android:layout_width="142dp"
+                android:layout_height="142dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/bg_avatar" />
+
+                <ImageView
+                    android:id="@+id/iv_student"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#7C7C7C"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

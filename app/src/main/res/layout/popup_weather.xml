@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/pop_weather_today"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_weather_today"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_today_min"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/min_oc"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_today_max"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/max_oc"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/pop_weather_tomorrow"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="0dp" />
+        <ImageView
+            android:id="@+id/iv_weather_tomorrow"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="50dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_tomorrow_min"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/min_oc"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_tomorrow_max"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/max_oc"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/pop_weather_third_day"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <ImageView
+            android:id="@+id/iv_weather_third_day"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="50dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_third_day_min"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/min_oc"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_third_day_max"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/max_oc"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
